@@ -35,11 +35,11 @@ public class Main {
         System.out.println("Bounsy");
 
         for ( Employee employee : employeeLedger.getAllEmployees()) {
-            if (salariedEmployee1.equals(employee)) {
-                salariedEmployee1.addBonus(223.0);
+            if (employee instanceof SalariedEmployee salariedEmp) {
+                salariedEmp.addBonus(223.0);
             }
             System.out.println("Imię pracownika: " + employee.getName());
-            System.out.println("Wiek pracownika: " + employee.getAge(employee.getBirthYear()));
+            System.out.println("Wiek pracownika: " + employee.getAge());
             System.out.println("Wypłata: " + employee.calculatePay());
         }
 

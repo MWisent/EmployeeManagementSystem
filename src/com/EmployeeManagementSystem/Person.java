@@ -29,7 +29,7 @@ public class Person {
         this.birthYear = birthYear;
     }
 
-    public int getAge(int birthYear) {
+    public int getAge() {
         int ageEmployed = java.time.Year.now().getValue() - birthYear;
         return ageEmployed;
     }

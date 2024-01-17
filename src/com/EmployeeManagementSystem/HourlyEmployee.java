@@ -12,7 +12,7 @@ public class HourlyEmployee extends Employee {
         this.overtimeRate = overtimeRate;
     }
 
-    public HourlyEmployee(String name, int birthYear, double baseSalary, int hoursWorked, double hourlyRate, double overtimeRate) {
+    public HourlyEmployee(String name, int birthYear) {
         super(name, birthYear, 2000.0);
         this.hoursWorked = 164;
         this.hourlyRate = 12.45;

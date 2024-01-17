@@ -29,6 +29,11 @@ public class Person {
         this.birthYear = birthYear;
     }
 
+    public int getAge(int birthYear) {
+        int ageEmployed = java.time.Year.now().getValue() - birthYear;
+        return ageEmployed;
+    }
+
     @Override
     public String toString() {
         return "Person{" +  name    + "," + birthYear + "}";
